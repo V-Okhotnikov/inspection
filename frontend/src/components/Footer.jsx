@@ -55,8 +55,7 @@ const Footer = () => {
               <li>Power Generation</li>
               <li>Chemical Processing</li>
               <li>Manufacturing</li>
-              <li>Pulp & Paper</li>
-            </ul>
+              </ul>
           </div>
 
           {/* Contact */}
@@ -66,36 +65,31 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-slate-400 mt-1" />
                 <div>
-                  <p>1234 Industrial Blvd</p>
-                  <p>Houston, TX 77001</p>
-                  <p>United States</p>
+                  <p>4A Bibirevskaya Str</p>
+                  <p>Moscow, 127549 </p>
+                  <p>Russian Federation</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-slate-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+7 (914) 752-7619</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-slate-400" />
-                <span>contact@assetintegritypro.com</span>
+                <span>okhotnikov.va@gmail.com</span>
               </div>
             </div>
             
-            {/* Emergency Contact */}
-            <div className="mt-6 p-4 bg-red-900/30 border border-red-800 rounded-lg">
-              <p className="text-red-200 text-sm font-medium">24/7 Emergency Response</p>
-              <p className="text-red-100 font-bold">+1 (555) 999-0000</p>
-            </div>
-          </div>
+                     </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="border-t border-slate-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-slate-300 text-sm">
-              <p>&copy; 2024 AssetIntegrity Pro. All rights reserved.</p>
+              <p>&copy; 2025 AssetIntegrity Pro. All rights reserved.</p>
             </div>
             
             <div className="flex space-x-6 text-sm text-slate-300 mt-4 md:mt-0">
@@ -113,5 +107,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 
 export default Footer;
