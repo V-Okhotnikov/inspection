@@ -1,11 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import './index.css';        // относительный путь
-import App from "./App";     // импорт App компонента
+import React from 'react';
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <div style={{
+      padding: '50px',
+      textAlign: 'center',
+      backgroundColor: '#4CAF50',
+      color: 'white',
+      minHeight: '100vh',
+      fontSize: '2rem'
+    }}>
+      ✅ React is Working!
+    </div>
+  );
+}
+
+export default App;
