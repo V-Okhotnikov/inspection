@@ -15,7 +15,7 @@ const Home = () => {
         <div className="min-h-screen bg-white">
             <Header />
             <HeroSection />
-            <AssetIntegeritySection />
+            <AssetIntegritySection />
             <StaticEquipmentSection />
             <TurnaroundSection />
             <DigitalTransformSection />
@@ -40,5 +40,6 @@ function App() {
 }
 
 export default App;
+
 
 
