@@ -13,7 +13,15 @@ function App() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      
+      <HeroSection />
+      <AssetIntegritySection />
+      <StaticEquipmentSection />
+      <TurnaroundSection />
+      <DigitalTransformSection />
+      <LessonsLearnedSection />
+      <AboutSection />
+      <Footer />
+    
       {/* Главная секция */}
       <section id="home" className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center">
@@ -62,4 +70,5 @@ function App() {
 }
 
 export default App;
+
 
