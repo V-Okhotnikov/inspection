@@ -8,7 +8,7 @@ import TurnaroundSection from './components/TurnaroundSection';
 import LessonsLearnedSection from './components/LessonsLearnedSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
-import { Toaster } from './components/ui/Toaster';
+//import { Toaster } from './components/ui/Toaster';
 
 const Home = () => {
     return (
@@ -40,3 +40,4 @@ function App() {
 }
 
 export default App;
+
