@@ -12,7 +12,7 @@ import uvicorn
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://your-netlify-app.netlify.app",  # ваш Netlify URL
+        "https://inspectionrbi.netlify.app",  # ваш Netlify URL
         "http://localhost:3000",  # для локальной разработки
     ],
     allow_credentials=True,
@@ -145,4 +145,5 @@ if __name__ == "__main__":
         access_log=True,
         log_level="info"
     )
+
 
