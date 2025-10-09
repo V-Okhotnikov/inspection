@@ -34,10 +34,11 @@ function App() {
                     <Route path="/" element={<Home />} />
                 </Routes>
             </BrowserRouter>
-            <Toaster />
+            //<Toaster />
         </div>
     );
 }
 
 export default App;
+
 
