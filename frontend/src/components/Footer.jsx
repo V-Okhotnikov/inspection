@@ -25,7 +25,7 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/vyacheslav-okhotnikov-99a25a58" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
+              <a href="https://x.com/okhotnikov_va" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="https://inspectionrbi.netlify.app/" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
