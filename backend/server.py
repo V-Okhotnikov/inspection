@@ -9,17 +9,6 @@ from datetime import datetime, timezone
 import uuid
 import uvicorn
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "https://inspectionrbi.netlify.app",  # ваш Netlify URL
-        "http://localhost:3000",  # для локальной разработки
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 # Настройка логирования
 logging.basicConfig(
     level=logging.INFO,
@@ -145,5 +134,6 @@ if __name__ == "__main__":
         access_log=True,
         log_level="info"
     )
+
 
 
