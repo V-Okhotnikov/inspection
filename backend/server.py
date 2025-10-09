@@ -55,6 +55,19 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+# 🔥 CORS middleware ДОЛЖНА БЫТЬ ЗДЕСЬ - после создания app, но до роутеров
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://inspectionrbi.netlify.app",
+        "http://localhost:3000",
+        "http://localhost:3001"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Роутер для API
 api_router = APIRouter(prefix="/api")
 
@@ -112,15 +125,6 @@ async def get_status_check(status_id: str):
 # Подключаем роутер к приложению
 app.include_router(api_router)
 
-# CORS middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Разрешить все домены для теста
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 # Запуск сервера для Render
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
@@ -134,6 +138,3 @@ if __name__ == "__main__":
         access_log=True,
         log_level="info"
     )
-
-
-
