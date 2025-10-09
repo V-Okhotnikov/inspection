@@ -34,7 +34,7 @@ const AboutSection = () => {
                     <div className="w-3 h-3 bg-white rounded-full"></div>
                   </div>
                 </div>
-                <CardTitle className="text-2xl text-slate-900">John Smith</CardTitle>
+                <CardTitle className="text-2xl text-slate-900">Vyacheslav Okhotnikov</CardTitle>
                 <p className="text-slate-600">Senior Asset Integrity Specialist</p>
                 <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 mt-2">
                   Available for Consultation
@@ -44,15 +44,15 @@ const AboutSection = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-slate-400" />
-                  <span className="text-slate-600">Houston, TX</span>
+                  <span className="text-slate-600">Moscow, RU</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-slate-400" />
-                  <span className="text-slate-600">john@assetintegritypro.com</span>
+                  <span className="text-slate-600">okhotnikov.va@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-slate-400" />
-                  <span className="text-slate-600">+1 (555) 123-4567</span>
+                  <span className="text-slate-600">+7 (914) 752-7619</span>
                 </div>
                 
                 <div className="pt-4">
@@ -153,5 +153,6 @@ const AboutSection = () => {
     </section>
   );
 };
+
 
 export default AboutSection;
