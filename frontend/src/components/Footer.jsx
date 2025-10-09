@@ -28,7 +28,7 @@ const Footer = () => {
               <a href="#" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
+              <a href="https://inspectionrbi.netlify.app/" className="bg-slate-800 hover:bg-slate-700 p-2 rounded-lg transition-colors">
                 <Globe className="h-5 w-5" />
               </a>
             </div>
@@ -110,3 +110,4 @@ const Footer = () => {
 
 
 export default Footer;
+
