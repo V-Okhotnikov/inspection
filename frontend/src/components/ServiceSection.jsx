@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Shield, AlertTriangle, Settings, Target, TrendingUp, GitBranch, 
   FileCheck, CheckCircle, Wrench, Cylinder, Flame, Thermometer, 
@@ -35,6 +36,11 @@ const ServiceSection = ({ sectionId, data, title }) => {
             const IconComponent = iconMap[item.icon] || Shield;
             
             return (
+              <Link 
+                to={getRoutePath(item)}
+                key={item.id} 
+                className="block"
+              >
               <Card key={item.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md hover:-translate-y-2">
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img 
@@ -102,5 +108,6 @@ export const DigitalTransformSection = () => (
     title="Digital Transformation"
   />
 );
+
 
 export default ServiceSection;
