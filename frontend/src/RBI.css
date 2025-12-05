@@ -1,0 +1,73 @@
+/* Custom transitions for interactive elements */
+button, a, .interactive {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+
+/* Card hover effects */
+.card-hover:hover {
+  border-color: #94A3B8;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Safety stripe pattern for empty states */
+.safety-stripes {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(241, 245, 249, 0.5) 10px,
+    rgba(241, 245, 249, 0.5) 20px
+  );
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Risk category colors */
+.risk-low {
+  background-color: #D1FAE5;
+  color: #065F46;
+  border-color: #6EE7B7;
+}
+
+.risk-medium-low {
+  background-color: #FEF3C7;
+  color: #92400E;
+  border-color: #FCD34D;
+}
+
+.risk-medium {
+  background-color: #FED7AA;
+  color: #9A3412;
+  border-color: #FB923C;
+}
+
+.risk-medium-high {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border-color: #FCA5A5;
+}
+
+.risk-high {
+  background-color: #FEE2E2;
+  color: #7F1D1D;
+  border-color: #EF4444;
+}
