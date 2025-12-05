@@ -47,6 +47,7 @@ const getRoutePath = (item) => {
 };
 
 const ServiceSection = ({ sectionId, data, title }) => {
+  console.log('ServiceSection рендерится для:', title);
   return (
     <section id={sectionId} className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,13 +59,18 @@ const ServiceSection = ({ sectionId, data, title }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
           {data.items.map((item) => {
             const IconComponent = iconMap[item.icon] || Shield;
-            
+            {data.items.map((item) => {
+      const routePath = getRoutePath(item);
+      console.log(`${item.title} -> ${routePath}`);
+              
             return (
               <Link 
-                to={item.route || '.scr/pages/RBIanalysis'}
+                to={getRoutePath}
                 key={item.id} 
+                onClick={() => console.log(`Клик по ${item.title}`)}
                 className="block"
               >
               <Card key={item.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md hover:-translate-y-2">
@@ -102,6 +108,7 @@ const ServiceSection = ({ sectionId, data, title }) => {
                   </div>
                 </CardContent>
               </Card>
+             </Link>  
             );
           })}
         </div>
@@ -137,6 +144,7 @@ export const DigitalTransformSection = () => (
 
 
 export default ServiceSection;
+
 
 
 
