@@ -18,6 +18,8 @@ import Reports from './pages/Reports';
 
 function App() {
   return (
+    <BrowserRouter>
+    <Route path="/" element={
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
@@ -30,10 +32,24 @@ function App() {
       <Footer />
          
     </div>
+ } />
+        
+          <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="equipment" element={<EquipmentRegistry />} />
+          <Route path="rbi-analysis" element={<RBIAnalysis />} />
+          <Route path="inspection-planning" element={<InspectionPlanning />} />
+          <Route path="floc-management" element={<FLOCManagement />} />
+          <Route path="reports" element={<Reports />} />
+        </Route>
+      </Routes>
+      <Toaster />
+    </BrowserRouter>
   );
 }
 
 export default App;
+
 
 
 
