@@ -20,6 +20,32 @@ const iconMap = {
   Drone: Settings // Using Settings as fallback for Drone
 };
 
+const getRoutePath = (item) => {
+  const routeMap = {
+    // Asset Integrity Management
+    'Risk-Based Inspection': '/dashboard/rbi-analysis',
+    'Inspection Planning': '/dashboard/inspection-planning',
+    'FLOC Management': '/dashboard/floc-management',
+    'Asset Integrity Analytics': '/dashboard/reports',
+    
+    // Static Equipment Inspection
+    'Pressure Vessel Inspection': '/dashboard/equipment',
+    'Storage Tank Inspection': '/dashboard/equipment',
+    'Boiler & Heater Inspection': '/dashboard/equipment',
+    'Heat Exchanger Inspection': '/dashboard/equipment',
+    'Pipeline Inspection': '/dashboard/equipment',
+    
+    // Digital Transformation
+    'Digital Twin': '/dashboard',
+    'Predictive Analytics': '/dashboard',
+    'IoT Sensor Integration': '/dashboard',
+    'Drone Inspection': '/dashboard',
+    'AR/VR Training': '/dashboard',
+  };
+  
+  return routeMap[item.title] || '/dashboard';
+};
+
 const ServiceSection = ({ sectionId, data, title }) => {
   return (
     <section id={sectionId} className="py-20 bg-slate-50">
@@ -111,5 +137,6 @@ export const DigitalTransformSection = () => (
 
 
 export default ServiceSection;
+
 
 
