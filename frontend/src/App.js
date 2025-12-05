@@ -8,6 +8,13 @@ import LessonsLearnedSection from './components/LessonsLearnedSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
 import { Toaster } from './components/ui/toaster';
+import DashboardLayout from './components/DashboardLayout';
+import Dashboard from './pages/Dashboard';
+import EquipmentRegistry from './pages/EquipmentRegistry';
+import RBIAnalysis from './pages/RBIAnalysis';
+import InspectionPlanning from './pages/InspectionPlanning';
+import FLOCManagement from './pages/FLOCManagement';
+import Reports from './pages/Reports';
 
 function App() {
   return (
@@ -27,6 +34,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
