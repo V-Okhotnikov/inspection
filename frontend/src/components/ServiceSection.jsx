@@ -37,7 +37,7 @@ const ServiceSection = ({ sectionId, data, title }) => {
             
             return (
               <Link 
-                to={item.route || 'pages/RBIanalysis'}
+                to={item.route || '.scr/pages/RBIanalysis'}
                 key={item.id} 
                 className="block"
               >
@@ -111,4 +111,5 @@ export const DigitalTransformSection = () => (
 
 
 export default ServiceSection;
+
 
