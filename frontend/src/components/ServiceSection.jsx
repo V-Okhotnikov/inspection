@@ -37,7 +37,7 @@ const ServiceSection = ({ sectionId, data, title }) => {
             
             return (
               <Link 
-                to={getRoutePath(item)}
+                to={item.route || 'pages/RBIanalysis'}
                 key={item.id} 
                 className="block"
               >
@@ -111,3 +111,4 @@ export const DigitalTransformSection = () => (
 
 
 export default ServiceSection;
+
