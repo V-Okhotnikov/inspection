@@ -20,6 +20,7 @@ export const mockData = {
         id: 2,
         title: "Failure Modes",
         description: "Analysis and prevention of equipment failure modes to ensure operational continuity.",
+        route: "pages/RBIanalysis",
         icon: "AlertTriangle",
         image: "https://images.unsplash.com/photo-1748347084012-075796185d56?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxpbmR1c3RyaWFsJTIwaW5zcGVjdGlvbnxlbnwwfHx8fDE3NTk4OTMxMTN8MA&ixlib=rb-4.1.0&q=85"
       },
@@ -248,4 +249,5 @@ export const mockData = {
       "Certified Asset Management Assessor"
     ]
   }
+
 };
